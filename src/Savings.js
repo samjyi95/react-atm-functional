@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 
-const Account = props => {
+const Savings = (props) => {
     let [amount, setAmount] = useState(0)
-    let [balance, setBalance] = useState(0)
+    let [balacnce, setBalance] = useState(0)
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -31,7 +31,7 @@ const Account = props => {
         balanceClass += ' zero'
     }
 
-    return (
+    return(
         <div className="account">
             <h2>{props.name}</h2>
             <div className={balanceClass}>${balance}</div>
@@ -57,4 +57,4 @@ const Account = props => {
     )
 }
 
-export default Account
+export default Savings

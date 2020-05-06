@@ -3,6 +3,7 @@ import React from 'react';
 
 // Custom Components
 import Account from './Account';
+import Savings from './Savings'
 
 // Resources
 import logo from './ga.png';
@@ -17,6 +18,7 @@ function App() {
       </div>
       <Account name="Checking" />
       <div className="clear"></div>
+      <Savings name="Savings" />
     </div>
   );
 }
